@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
     <title>Character Manager</title>
 </head>
 <body>
     <header class="ml-10 mr-10">      
         <!--NAVBAR--> 
-        <div class="translate-y-16">Character Manager</div>  
+        <div class="translate-y-16">Character Manager</div>
         <form class="flex items-center mt-10 mb-10 justify-end"">   
-            
+
             <label for="simple-search" class="sr-only">Search</label>
             <div class="relative ">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -30,23 +29,23 @@
     <main class="ml-10 mr-10">
        <br>
        <br> 
-       <!--CARD-->   
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-                <img class="rounded-t-lg" src="" alt="Picture of a character" />
-            </a>
-            <div class="p-5">
-                <a href="#">
+       <!--CARD-->  
+       <article id="allCards" class="grid grid-cols-4 gap-5 m-10">
+        <div class="max-w-sm h-96 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hidden">
+                <img id="characterImg" class="img rounded-t-lg" src="" alt="Picture of a character"/>
+
+            <div id="characterName" class="name p-5">
                     <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Name</h5>
-                </a>
-                <p class="text-center mb-3 font-normal text-gray-700 dark:text-gray-400">Short description</p>
-                <a href="#" class="text-center inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <p id="characterDescription"  class="shortDescription text-center mb-3 font-normal text-gray-700 dark:text-gray-400">Short description</p>
+                <div id="btn" class="btn text-center"><button class="text-center inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     See character
                     <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </a>
+                </button>
+                </div>
             </div>
+          </article> 
         </div>
-            <button type="button" class=" mt-12 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">+ Add a new character to the collection</button>
+            <div class="text-center"><button type="button" class="place-items-center mt-12 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">+ Add a new character to the collection</button></div>
     </main>
     <footer class="mt-10">
         <!--PAGINATION-->   
@@ -94,6 +93,6 @@
         </div>
       </div>
       </footer>
-  <script src="Js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
