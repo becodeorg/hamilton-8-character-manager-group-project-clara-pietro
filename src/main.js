@@ -55,7 +55,7 @@ const characterInfos = fetch('https://character-database.becode.xyz/characters')
         btn.classList.add("btn");    
         btn.className = "text-center-btn"
         divRd.appendChild(btn);
-        btn.href = "single.html?id=" + character['id'];
+        btn.href = "src/single.html?id=" + character['id'];
     }
 })
 
