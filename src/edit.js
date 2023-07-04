@@ -43,7 +43,7 @@ fetch("https://character-database.becode.xyz/characters/")
           .then(response => response.json())
           .then(result => {
             console.log("Success:", result);
-            window.location.href = "index.html";
+            window.location.href = "../index.html";
           })
        
           .catch(error => {

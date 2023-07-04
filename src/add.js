@@ -31,6 +31,6 @@ function send(){
   }
 })
     .then( rep => {
-        document.location.href="index.html"; 
+        document.location.href="../index.html"; 
 })
 }
