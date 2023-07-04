@@ -68,7 +68,7 @@ function create(data){
     
             // Redirection vers une autre page
             // TODO: la bonne page
-            window.location.href = "mainPage.html";
+            window.location.href = "index.html";
     
           })
         .catch(error => {
