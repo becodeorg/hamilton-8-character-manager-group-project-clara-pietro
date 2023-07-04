@@ -50,12 +50,12 @@ const characterInfos = fetch('https://character-database.becode.xyz/characters')
         divNd.appendChild(divRd);
 
         //creating button
-        let btn = document.createElement('button');
+        let btn = document.createElement('a');
         btn.innerText = "See character";
         btn.classList.add("btn");    
         btn.className = "text-center-btn"
-        //window.location.href ="single.html";//
         divRd.appendChild(btn);
+        btn.href = "single.html?id=" + character['id'];
     }
 })
 

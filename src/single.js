@@ -40,43 +40,41 @@ function create(data){
     divBtn.className = "div_btn";
     divText.appendChild(divBtn);
 
-    let btnL = document.createElement('button');
+    let btnL = document.createElement('a');
     btnL.className = "btn_left";
     btnL.innerText = "Edit";
     divBtn.appendChild(btnL);
+    btnL.href = "edit.html?id=" + data['id'];
 
     let btnR = document.createElement('button');
     btnR.className = "btn_right";
     btnR.innerText = "Delete";
     divBtn.appendChild(btnR);
-}
 
-// Add click event listener to deleteButton for deleting the character
-const deleteButton = cardInfoCharacter.querySelector('.btn_right');
-btn_right.addEventListener('click', () => {
-    // Display an alert to confirm the deletion
-    const confirmation = confirm('Are you sure you want to delete?');
-    if (confirmation) {
-        // Add code to delete the character
-        fetch(`https://character-database.becode.xyz/characters/${cardData["id"]}`, {
-            method: 'DELETE',
+    btnR.addEventListener("click", () => {
+        fetch("https://character-database.becode.xyz/characters/" + postId, {
+            method: "DELETE",
         })
         .then(response => {
-            if (response.ok) {
-                // Display success message
-                alert("You killed him :'(");
-
-                // Redirect to index.html
-                window.location.href = "index.html";
-            } else {
-                // Handle the error case
-                alert("Failed to delete character.");
+            if (response.ok){
+                console.log("bien supprimé");
+            }
+            else{
+                console.log("pas supprimé error");
             }
         })
+        .then(result => {
+            console.log("Success:", result);
+    
+            // Redirection vers une autre page
+            // TODO: la bonne page
+            window.location.href = "mainPage.html";
+    
+          })
         .catch(error => {
-            // Handle any network or other errors
-            console.error("Error deleting character:', error");
-            alert('An error occurred while deleting the character.');
+            console.error("erreur :", error);
         });
-    }
-});
+    
+    });
+    
+}
