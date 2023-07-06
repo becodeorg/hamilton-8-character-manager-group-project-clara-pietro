@@ -1,0 +1,56 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 40vw;
+    height: 75vh;
+    background-color: rgb(71, 71, 186);
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 2%;
+}
+.div_pp{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 40%;
+    border-radius: 5px;
+}
+.divText{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 5% 10% 0% 10%;
+}
+.name{
+    font-size: 20px;
+    margin: 1%;
+}
+.shortDescription{
+    font-size: 15px;
+    margin: 1%;
+}
+.description{
+    font-size: 12px;
+    margin: 1%;
+}
+.div_btn{
+    margin: 5px;
+    padding-top: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn_left, .btn_right{
+    border: 1px white solid;
+    border-radius: 5px;
+    width: 25%;
+}
