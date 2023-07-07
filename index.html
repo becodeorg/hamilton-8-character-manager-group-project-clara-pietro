@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="html-main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/80333a5599.js" crossorigin="anonymous"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/src/main.css" rel="stylesheet">
+    <script src="/src/createCard.js" defer type="module"></script>
+    <title>Character Manager</title>
+</head>
+<body class="body-main">
+    <header>      
+        <!--NAVBAR--> 
+        <nav>
+        <div class="translate-y-10 nav-title"><a href="index.html">Character Manager</a></div>
+        <form class="flex items-center mt-10 mb-10 justify-end">   
+            <label for="simple-search" class="sr-only">Search</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="#a694e9" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                </div>
+                <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-l rounded-lg focus:ring-indigo-200 focus:border-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Search character" required>
+            </div>
+            <button type="submit" id="lets-search" class="loupe">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <span class="sr-only">Search</span>
+            </button>
+        </form>
+      </nav>
+      
+    </header>
+    <main class="main-main">
+       <!--CARDS-->
+       <div class="text-center"><button class="btn-add"><a href="/src/add.html" >+ Add a new character to the collection</a></button></div>  
+       <section id="allCards" class="character-section">
+          <a class="card" hidden>
+            <div class="card__background">
+                <img id="characterImg" class="img-rounded" src="https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Picture of a character">
+            </div>
+            <div id="characterName" class="card__content name p-5">
+              <h5 class="card__name mb-2 text-2xl font-bold tracking-tight">Name</h5>
+              <p id="characterDescription" class="card__txt shortDescription text-center mb-3 font-normal text-gray-700 dark:text-gray-400">Short description</p>
+            
+            <div id="btn" class="btn text-center"><button class="text-center-btn">See character</button>
+            </div>
+            </div>
+          </a>
+      </section>
+    </main>
+    <footer>
+      <div class="text-center"><button class="btn-add-footer"><a  href="#top"><i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i></a></button></div> 
+    </footer>
+</body>
+</html>
