@@ -10,7 +10,7 @@ Some characters already existed, we fetched them from an API.
 [Pietro](https://github.com/Otto1808) & [Clara](https://github.com/clamaha)
 ## Languages used
 * HTML
-* CSS + Tailwind
+* CSS (+ Tailwind)
 * JavaScript
 ---
-**Take a look at our finished project [right here](link)**
+**Take a look at our finished project [right here](https://delightful-strudel-c2a606.netlify.app/)**
