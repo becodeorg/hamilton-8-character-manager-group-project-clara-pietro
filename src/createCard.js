@@ -1,5 +1,4 @@
 const allCards = document.querySelector("#allCards");
-
 /**
  * 
  * @param {string} elemHTML element create and append
@@ -72,3 +71,18 @@ const characterInfos = fetch('https://character-database.becode.xyz/characters')
 })
 
 //SEARCH BAR
+const search = document.querySelector("#simple-search");
+search.addEventListener("input", handleSearch);
+function handleSearch() {
+    const searchTerm = search.value.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+      const name = card.querySelector(".card__name").innerText.toLowerCase();
+      if (name.includes(searchTerm)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
