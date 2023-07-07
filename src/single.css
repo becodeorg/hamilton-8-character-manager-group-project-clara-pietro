@@ -8,7 +8,7 @@ main{
 .container{
     width: 40vw;
     min-height: 75vh;
-    background-color: rgb(71, 71, 186);
+    background-color: rgba(71, 71, 186, 0.473);
     text-align: center;
     border-radius: 10px;
     display: flex;
@@ -33,14 +33,16 @@ img{
 }
 .name{
     font-size: 20px;
+    font-weight: 700;
     margin: 1%;
 }
 .shortDescription{
     font-size: 15px;
+    text-transform: uppercase;
     margin: 1%;
 }
 .description{
-    font-size: 12px;
+    font-size: 14px;
     margin: 1%;
 }
 .div_btn{
@@ -54,4 +56,6 @@ img{
     border: 1px white solid;
     border-radius: 5px;
     width: 25%;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.137);
 }
