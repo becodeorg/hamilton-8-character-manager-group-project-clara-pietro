@@ -75,6 +75,12 @@
     margin: 0;
     margin-right:60px;
 }
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
 .loupe{
     border: 2px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(245, 245, 245, 0.267);
@@ -157,7 +163,7 @@
   }
  
    .card__name{
-    color: var(--text-lighter);
+    color: white;
     font-size: 22px;
     text-align: left;
     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
@@ -167,7 +173,7 @@
   }
   .card__txt{
     font-weight: 700;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.651);
     font-size: 0.9rem;
     margin-bottom: var(--spacing-s);
     text-align: left;
