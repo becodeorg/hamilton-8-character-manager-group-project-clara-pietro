@@ -67,7 +67,7 @@ const characterInfos = fetch('https://character-database.becode.xyz/characters')
             "See character"
         );
             
-        btn.href = "/Charactère manager/src/single.html?id=" + character.id;
+        btn.href = "/src/single.html?id=" + character.id;
     }
 })
 

@@ -1,13 +1,13 @@
 main{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .container{
     width: 40vw;
-    height: 75vh;
+    min-height: 75vh;
     background-color: rgb(71, 71, 186);
     text-align: center;
     border-radius: 10px;
@@ -15,13 +15,14 @@ main{
     flex-direction: column;
     color: white;
     padding-top: 2%;
+    padding: 10vh;
 }
 .div_pp{
     display: flex;
     justify-content: center;
 }
 img{
-    width: 40%;
+    width: 280px;
     border-radius: 5px;
 }
 .divText{
@@ -44,7 +45,7 @@ img{
 }
 .div_btn{
     margin: 5px;
-    padding-top: 10%;
+    padding-top: 5%;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
